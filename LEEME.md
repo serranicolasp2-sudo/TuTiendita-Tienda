@@ -45,9 +45,10 @@
 
 - **Lenguaje:** Python 3.11+
 - **Framework Web:** FastAPI, Starlette, Uvicorn
-- **Base de Datos:** SQLite / SQLAlchemy
-- **Integraciones:** Mercado Pago SDK, MercadoLibre API, Google Drive API, SMTP
-- **Testing:** Pytest
+- **Base de Datos:** SQLite3 (módulo nativo estándar, almacenamiento transaccional local sin sobrecarga de ORMs)
+- **Integración de Pagos:** `httpx` para llamadas REST asíncronas directas a la API de Mercado Pago, verificación criptográfica de firmas HMAC-SHA256 en webhooks y control de idempotencia
+- **Orquestación de IA:** Integración desatendida por CLI con Claude y Codex (`herramientas/claudecli.py`, `herramientas/codexcli.py`)
+- **Testing:** Suite completa de pruebas con Pytest (46 tests automatizados pasando al 100%)
 
 ---
 
