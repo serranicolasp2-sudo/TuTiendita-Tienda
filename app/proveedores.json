@@ -1,0 +1,71 @@
+{
+  "_leeme": "Publicaciones de ML que vigila proveedores.py, leídas desde tus links sociales de afiliado (meli.la/…). 'productos': cómo se calcula el precio de venta (con costo_base/precio_base se mantiene esa ganancia neta; con ganancia_neta, (costo + ganancia) / (1 - comisión real de Mercado Pago, leída de tus cobros por la API: D-49)). Si un producto tiene varias publicaciones (el enmarcado: madera y negro), el precio sale de la más cara. 'item_id': si el link pasa a mostrar otra publicación, avisa. 'vendedor': si ML lo muestra y cambia, avisa. 'gratis_con_tu_cuenta': la página pública no muestra los beneficios de tu cuenta (Meli+); en esas publicaciones el envío es gratis para vos aunque el público vea 'Llega mañana', así que solo se controla que llegue mañana.",
+  "productos": {
+    "rf-cuadro-ecocuero-20x30": {
+      "costo_base": 25000,
+      "precio_base": 34900
+    },
+    "rf-cuadro-ecocuero-40x30": {
+      "costo_base": 32900,
+      "precio_base": 44900
+    },
+    "rf-cuadro-enmarcado-20x30": {
+      "ganancia_neta": 5000
+    },
+    "rf-cuadro-enmarcado-30x40": {
+      "ganancia_neta": 5000
+    }
+  },
+  "publicaciones": [
+    {
+      "producto": "rf-cuadro-ecocuero-20x30",
+      "nombre": "Ecocuero bastidor 20x30",
+      "url": "https://meli.la/1NfcY82",
+      "item_id": "MLA1286998514",
+      "vendedor": "ARTEYCOLORES", "gratis_con_tu_cuenta": true
+    },
+    {
+      "producto": "rf-cuadro-ecocuero-40x30",
+      "nombre": "Ecocuero bastidor 30x40",
+      "url": "https://meli.la/1pXSHDH",
+      "item_id": "MLA1287237038",
+      "vendedor": "ARTEYCOLORES", "gratis_con_tu_cuenta": true
+    },
+    {
+      "producto": "rf-cuadro-enmarcado-20x30",
+      "marco": "Madera",
+      "nombre": "Enmarcado color madera 20x30",
+      "url": "https://meli.la/19apaYx",
+      "item_id": "MLA1777339229",
+      "vendedor": "urbancraft",
+      "gratis_con_tu_cuenta": true
+    },
+    {
+      "producto": "rf-cuadro-enmarcado-20x30",
+      "marco": "Negro",
+      "nombre": "Enmarcado color negro 20x30",
+      "url": "https://meli.la/2m8y8ov",
+      "item_id": "MLA3279050800",
+      "vendedor": "urbancraft",
+      "gratis_con_tu_cuenta": true
+    },
+    {
+      "producto": "rf-cuadro-enmarcado-30x40",
+      "marco": "Madera",
+      "nombre": "Enmarcado color madera 30x40",
+      "url": "https://meli.la/1fQNtPf",
+      "item_id": "MLA1777336761",
+      "vendedor": "urbancraft",
+      "gratis_con_tu_cuenta": true
+    },
+    {
+      "producto": "rf-cuadro-enmarcado-30x40",
+      "marco": "Negro",
+      "nombre": "Enmarcado color negro 30x40",
+      "url": "https://meli.la/1UFxNbZ",
+      "item_id": "MLA1777336759",
+      "vendedor": "urbancraft",
+      "gratis_con_tu_cuenta": true
+    }
+  ]
+}

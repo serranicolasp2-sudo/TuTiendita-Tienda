@@ -1,0 +1,23 @@
+[Unit]
+Description=Tu Tiendita IA (Tu Canción · Restauración de fotos) - API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=tienda
+Group=tienda
+WorkingDirectory=/srv/tutienditaia/app
+EnvironmentFile=/srv/tutienditaia/.env
+ExecStart=/srv/tutienditaia/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8091 --proxy-headers --forwarded-allow-ips 127.0.0.1 --workers 1
+Restart=always
+RestartSec=3
+# aislamiento: no puede leer el campus ni escribir fuera de su carpeta
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/tutienditaia/datos
+InaccessiblePaths=-/var/www/html -/var/moodledata -/etc/mysql
+
+[Install]
+WantedBy=multi-user.target

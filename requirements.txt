@@ -1,0 +1,9 @@
+fastapi==0.128.8
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+httpx>=0.27
+google-api-python-client>=2.130
+google-auth>=2.29
+google-auth-oauthlib>=1.2
+pytest>=8
+dnspython>=2.6
